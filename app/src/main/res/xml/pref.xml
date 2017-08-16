@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="general settings"
+        android:summary="Фон екрану, активні, неактивні елементи"
+        android:title="General settings">
+        <PreferenceCategory
+            android:key="category1"
+            android:summary="Description of category 1"
+            android:title="Category 1">
+            <ListPreference
+                android:entries="@array/colorFon"
+                android:entryValues="@array/colorFonNum"
+                android:key="list1"
+                android:summary="виберіть колір"
+                android:title="Фон екрану">
+            </ListPreference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="category2"
+            android:summary="Description of category 2"
+            android:title="Category 2">
+            <CheckBoxPreference
+                android:key="chb"
+                android:summary=" "
+                android:title="налаштування TextView">
+            </CheckBoxPreference>
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+
+    <PreferenceScreen
+        android:dependency="chb"
+        android:key="settings 1"
+        android:summary=""
+        android:title="Settings 1">
+        <ListPreference
+                android:entries="@array/colorFon"
+                android:entryValues="@array/colorFonNum"
+                android:key="list11"
+                android:summary="виберіть колір фону текстового поля "
+                android:title="Колір фону">
+        </ListPreference>
+        <ListPreference
+            android:entries="@array/colorFon"
+            android:entryValues="@array/colorFonNum"
+            android:key="list12"
+            android:summary="виберіть колір тексту"
+            android:title="Колір тексту">
+        </ListPreference>
+        <EditTextPreference
+            android:key="text1"
+            android:title="Текст">
+        </EditTextPreference>
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:dependency="chb"
+        android:key="settings 2"
+        android:summary=""
+        android:title="Settings 2">
+        <ListPreference
+            android:entries="@array/colorFon"
+            android:entryValues="@array/colorFonNum"
+            android:key="list21"
+            android:summary="виберіть колір фону текстового поля"
+            android:title="Колір фону">
+        </ListPreference>
+        <ListPreference
+            android:entries="@array/colorFon"
+            android:entryValues="@array/colorFonNum"
+            android:key="list22"
+            android:summary="виберіть колір тексту"
+            android:title="Колір тексту">
+        </ListPreference>
+        <EditTextPreference
+            android:key="text2"
+            android:title="Текст">
+        </EditTextPreference>
+    </PreferenceScreen>
+
+
+
+    <PreferenceScreen
+        android:dependency="chb"
+        android:key="settings 3"
+        android:summary=""
+        android:title="Settings 3">
+        <ListPreference
+            android:entries="@array/colorFon"
+            android:entryValues="@array/colorFonNum"
+            android:key="list31"
+            android:summary="виберіть колір фону текстового поля"
+            android:title="Колір фону">
+        </ListPreference>
+        <ListPreference
+            android:entries="@array/colorFon"
+            android:entryValues="@array/colorFonNum"
+            android:key="list32"
+            android:summary="виберіть колір тексту "
+            android:title="Колір тексту">
+        </ListPreference>
+        <EditTextPreference
+            android:key="text3"
+            android:title="Текст"
+            >
+        </EditTextPreference>
+
+    </PreferenceScreen>
+</PreferenceScreen>
